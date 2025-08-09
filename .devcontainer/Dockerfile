@@ -1,5 +1,5 @@
 # Base image: Rust + Cargo + standard build tools
-FROM rust:1.80-slim-bookworm
+FROM rust:1.89-slim-bookworm
 
 # Install system dependencies your Rust crates may need
 RUN apt-get update && apt-get install -y \
