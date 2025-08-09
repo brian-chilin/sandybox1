@@ -3,11 +3,11 @@
   "dockerFile": "Dockerfile",
   "context": "..",
   "remoteUser": "vscode",
+  "features": {},
   "customizations": {
     "vscode": {
       "extensions": [
         "rust-lang.rust-analyzer",
-        "serayuzgur.crates",
         "vadimcn.vscode-lldb"
       ]
     }
