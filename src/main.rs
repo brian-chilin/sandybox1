@@ -84,14 +84,14 @@ async fn main() -> std::io::Result<()> {
         s:small_url.unwrap(),
         b64:small_base64.unwrap(),
     };
-    println!("running? {}", state.i);
+    println!("About to run on 0.0.0.0:5100  ~  {}", state.i);
     HttpServer::new(move || {
         App::new()
             .app_data(web::Data::new(state.clone()))
             .service(hello)
             .service(api)
     })
-    .bind(("0.0.0.0", 8080))?
+    .bind(("0.0.0.0", 5100))?
     .run()
     .await
 }
